@@ -30,7 +30,7 @@ async fn main(req: Request, env: Env, _: Context) -> Result<Response> {
         .on_async("/", fe)
         .on_async("/sub", sub)
         .on("/link", link)
-        .on_async("/:proxyip", tunnel)
+        .on_async("/:103.3.60.117:587", tunnel)
         .run(req, env)
         .await
 }
